@@ -1,0 +1,59 @@
+{
+  "name": "gooder-cli",
+  "version": "1.0.0",
+  "description": "Download publicly shared media on google drive with an ease.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codedotjs/gooder-cli.git"
+  },
+  "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.com)",
+  "bin": {
+    "gooder": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "gooder",
+    "google",
+    "gdrive",
+    "drive",
+    "google-drive",
+    "public-drive",
+    "files",
+    "download",
+    "fetch",
+    "CLI",
+    "cli-app",
+    "media-downloader"
+  ],
+  "dependencies": {
+    "gooder": "*",
+    "colors": "*",
+    "yargs": "*",
+    "mkdirp": "*",
+    "https": "*",
+    "follow-redirects": "*",
+    "update-notifier": "*"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.2.2",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "bugs": {
+    "url": "https://github.com/codedotjs/gooder-cli/issues"
+  },
+  "homepage": "https://github.com/codedotjs/gooder-cli#readme",
+  "main": "cli.js"
+}
