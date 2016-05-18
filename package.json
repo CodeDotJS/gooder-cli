@@ -36,11 +36,14 @@
   ],
   "dependencies": {
     "gooder": "*",
-    "colors": "*",
-    "yargs": "*",
-    "mkdirp": "*",
-    "https": "*",
+    "fs": "*",
     "follow-redirects": "*",
+    "https": "*",
+    "mkdirp": "*",
+    "colors": "*",
+    "request": "*",
+    "cheerio": "*",
+    "yargs": "*"
     "update-notifier": "*"
   },
   "devDependencies": {
