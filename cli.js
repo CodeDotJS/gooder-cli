@@ -22,7 +22,7 @@ const argv = require('yargs')
 
 	.command(' u', ' ❱ required before URL')
 
-	.demand(['u', ])
+	.demand(['u'])
 
 	.describe('u', ' ❱ Google Drive URL')
 
@@ -55,9 +55,9 @@ function checkInternet(cb) {
 
 checkInternet(isConnected => {
 	if (isConnected) {
-		console.log(colors.cyan('\n ❱ Internet Connection   :    ✔      '));
+		console.log(colors.cyan('\n ❱ Internet Connection   :   ✔      '));
 	} else {
-		console.log(colors.red.bold('\n ❱ Internet Connection   :    ✖\n'));
+		console.log(colors.red.bold('\n ❱ Internet Connection   :   ✖\n'));
 		// stop the whole process if there is not internet connection
 		process.exit(1);
 	}
@@ -85,7 +85,7 @@ if (goodVerf.indexOf('http') === 0) {
 		} else {
 			// finding title of the content
 			request(argv.u, (error, response, html) => {
-				if (!error && response.statusCode == 200) {
+				if (!error && response.statusCode === 200) {
 					const $ = cheerio.load(html, {
 						normalizeWhitespace: true,
 
