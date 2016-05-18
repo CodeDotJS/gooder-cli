@@ -55,7 +55,7 @@ function checkInternet(cb) {
 
 checkInternet(isConnected => {
 	if (isConnected) {
-		console.log(colors.cyan('\n ❱ Internet Connection   :   ✔      '));
+		console.log(colors.cyan.bold('\n ❱ Internet Connection   :   ✔      '));
 	} else {
 		console.log(colors.red.bold('\n ❱ Internet Connection   :   ✖\n'));
 		// stop the whole process if there is not internet connection
@@ -94,15 +94,19 @@ if (goodVerf.indexOf('http') === 0) {
 					// fetching title of the URL
 					const title = $('title').text().replace(' - Google Drive', '').replace(/ /g, '-');
 
-					console.log(colors.cyan('\n ❱ Saving...'), colors.cyan.bold(title), '\n');
+					console.log(colors.cyan.bold('\n ❱ Downloading ...'), colors.green.bold(title), '\n');
 
 					// importing
 					const getFileIn = fs.createWriteStream(downloadDirectory + title);
 
 					// downloading and saving process
-					https.get(goodVerf, res => {
+					https.get(goodVerf, (res, cb) => {
 						// piping
 						res.pipe(getFileIn);
+						getFileIn.on('finish', () => {
+							console.log(colors.cyan.bold(' ❱ File saved in'), colors.green.bold('GoDrive\n'));
+							getFileIn.close(cb);
+						});
 					}).on('error', err => { // chances are negligible
 						process.exit(1);
 						// better to exit before showing user some random error messages
