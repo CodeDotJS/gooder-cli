@@ -2,7 +2,7 @@
 
 > Download publicly shared media from google drive with an ease.
 
-[![Build Status](https://travis-ci.org/CodeDotJS/whatiz-cli.svg?branch=master)](https://travis-ci.org/CodeDotJS/gooder-cli)
+[![Build Status](https://travis-ci.org/CodeDotJS/gooder.svg?branch=master)](https://travis-ci.org/CodeDotJS/gooder-cli)
 
 ## Install
 
@@ -37,8 +37,12 @@ Missing required argument: u
 ## Run
 ```
 $ gooder -u https://drive.google.com/file/d/0B3vyNXp6qDWwbXlwZllTd3BuUlk/edit?usp=sharing
-	
-	 ❱ Internet Connection   :   ✔ 
+
+	❱ Internet Connection   :   ✔      
+
+	❱ Downloading ... A-Walk-To-Remember-Nicholas-Spark.pdf 
+
+	❱ File saved in GoDrive
 ```
 
 ## Screenshot
