@@ -9,7 +9,9 @@
 ```
 $ npm install --global gooder-cli
 ```
+
 __OR__
+
 ```
 $ sudo npm install --global gooder-cli
 ```
@@ -35,13 +37,13 @@ Missing required argument: u
 ## Run
 ```
 $ gooder -u https://drive.google.com/file/d/0B3vyNXp6qDWwbXlwZllTd3BuUlk/edit?usp=sharing
-
-	❱ File Saved in : Drive as filename.extension
+	
+	 ❱ Internet Connection   :   ✔ 
 ```
 
 ## Screenshot
 
-![whatiz](http://rishigiri.com/github/gooder.png)
+![gooder](http://rishigiri.com/github/gooder.png)
 
 ## Related
 
