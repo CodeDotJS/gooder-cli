@@ -2,13 +2,13 @@
 
 'use strict';
 
+const fs = require('fs');
+
 const https = require('follow-redirects').https;
 
 const mkdirp = require('mkdirp');
 
 const colors = require('colors/safe');
-
-const fs = require('fs');
 
 const request = require('request');
 
