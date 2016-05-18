@@ -36,15 +36,14 @@
   ],
   "dependencies": {
     "gooder": "*",
-    "fs": "*",
-    "follow-redirects": "*",
-    "https": "*",
-    "mkdirp": "*",
     "colors": "*",
-    "request": "*",
-    "cheerio": "*",
-    "yargs": "*"
-    "update-notifier": "*"
+    "yargs": "*",
+    "mkdirp": "*",
+    "https": "*",
+    "follow-redirects": "*",
+    "update-notifier": "*",
+    "fs": "*",
+    "cheerio": "*"
   },
   "devDependencies": {
     "ava": "*",

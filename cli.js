@@ -66,7 +66,7 @@ checkInternet(isConnected => {
 // gooder don't provide much information about URL
 // So, just dirty way to check if the argument provided by user is a url
 if (goodVerf.indexOf('http') === -1) {
-	console.log(colors.red('\n', goodVerf, '\n'));
+	console.log(colors.bold.red('\n', goodVerf.replace('.', ''), 'media.', '\n'));
 	// if not 'http' - stop everything and show default error.
 	process.exit(1);
 }
