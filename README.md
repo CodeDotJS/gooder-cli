@@ -35,19 +35,21 @@ Missing required argument: u
 ```
 
 ## Run
+
+__Paste the below command to check the functionality of this tool :__
+
 ```
 $ gooder -u https://drive.google.com/file/d/0B3vyNXp6qDWwbXlwZllTd3BuUlk/edit?usp=sharing
 
-	❱ Internet Connection   :   ✔      
-
-	❱ Downloading ... A-Walk-To-Remember-Nicholas-Spark.pdf 
-
-	❱ File saved in GoDrive
+	// => Content will be saved in 'GoDrive'
 ```
 
 ## Screenshot
 
-![gooder](http://rishigiri.com/github/gooder.png)
+<h1 align="center">
+<img src="http://rishigiri.com/github/gooder.png" alt="GOODER" width="800">
+
+</h1>
 
 ## Related
 
