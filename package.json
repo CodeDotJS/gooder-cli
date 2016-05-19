@@ -1,6 +1,6 @@
 {
   "name": "gooder-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download publicly shared media on google drive with an ease.",
   "license": "MIT",
   "repository": {
